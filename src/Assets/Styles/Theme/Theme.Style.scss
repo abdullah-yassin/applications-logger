@@ -1,0 +1,36 @@
+//========================================================= Start Main Tags Override
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0 !important;
+}
+
+body {
+  background-color: $c-white;
+  font-size: 14px;
+  color: $c-black-light;
+  min-width: 320px;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+label {
+  margin-bottom: 0;
+}
+
+p,
+label {
+  font-weight: 300;
+}
+
+#root {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+// ========================================================= End Main Tags Override

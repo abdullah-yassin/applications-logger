@@ -1,0 +1,75 @@
+@import '../../../../../Assets/Styles/Helpers/Helpers.Style.scss';
+
+.applications-logger-table-filter-wrapper {
+  width: 100%;
+  display: flex;
+  padding-bottom: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
+
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
+    width: 14%;
+
+    @media (max-width: 1440px) {
+      width: 14%;
+    }
+    @media (max-width: 1024px) {
+      width: 33.333%;
+    }
+    @media (max-width: 425px) {
+      width: 50%;
+    }
+    @media (max-width: 375px) {
+      width: 100%;
+    }
+
+    .filter-label-wrapper {
+      font-weight: bold;
+      padding-bottom: 0.5rem;
+    }
+
+    .MuiOutlinedInput-root {
+      border-radius: 0.4rem;
+    }
+
+    .MuiOutlinedInput-notchedOutline {
+      border-color: $c-gray-light;
+    }
+
+    .MuiSvgIcon-root {
+      color: $c-gray;
+    }
+
+  }
+
+  .filter-actions-wrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 0.5rem;
+
+    @media (max-width: 425px) {
+      width: 100%;
+    }
+
+    .search-button-wrapper {
+      .MuiButtonBase-root {
+        margin-right: 0.5rem;
+        color: $c-white;
+        font-weight: bold;
+        height: 2.5rem;
+        border-radius: 0.4rem;
+        background-color: #0f489b;
+        min-width: 10rem;
+      }
+    }
+  }
+}
