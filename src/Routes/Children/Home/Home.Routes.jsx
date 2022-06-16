@@ -1,6 +1,4 @@
-import loadable from '@loadable/component';
-
-const ApplicationsView = loadable(() => import('../../../Views/Home/applications-logger/ApplicationsLogger.View'));
+import ApplicationsView from '../../../Views/Home/applications-logger/ApplicationsLogger.View';
 
 export const HomeRoutes = [
   {

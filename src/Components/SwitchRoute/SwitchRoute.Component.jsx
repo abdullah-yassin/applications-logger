@@ -3,7 +3,7 @@ import React, {
 } from 'react';
 import PropTypes from 'prop-types';
 import {
-    Routes, Route, useNavigate, Navigate
+    Routes, Route, useNavigate
 } from 'react-router-dom';
 
 export const SwitchRouteComponent = memo(({routes}) => {

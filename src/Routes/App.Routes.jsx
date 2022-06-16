@@ -1,7 +1,6 @@
-import loadable from '@loadable/component';
 import { HomeRoutes } from './Children';
 
-const HomeLayout = loadable(() => import('../Layouts/Home/Home.Layout'));
+import HomeLayout from '../Layouts/Home/Home.Layout';
 
 export const AppRoutes = [
   {

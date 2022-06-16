@@ -1,13 +1,15 @@
 import React from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
-import { SwitchRouteComponent } from './Components';
-import { AppRoutes } from './Routes';
+import { HeaderComponent } from './Layouts/Home/Sections/Header/Header.Component';
+import ApplicationsView from './Views/Home/applications-logger/ApplicationsLogger.View';
 
 const App = () => {
     return (
-        <Router>
-            <SwitchRouteComponent routes={AppRoutes} />
-        </Router>
+    <>
+      <HeaderComponent />
+      <div className="container-wrapper">
+        <ApplicationsView />
+      </div>
+    </>
     );
 };
 

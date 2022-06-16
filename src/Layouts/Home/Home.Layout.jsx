@@ -1,7 +1,6 @@
 import React from 'react';
-import { SwitchRouteComponent } from '../../Components';
-import { HomeRoutes } from '../../Routes';
 import {HeaderComponent} from './Sections';
+import ApplicationsView from '../../Views/Home/applications-logger/ApplicationsLogger.View';
 import './Home.Style.scss';
 
 const HomeLayout = () => {
@@ -9,7 +8,7 @@ const HomeLayout = () => {
     <>
       <HeaderComponent />
       <div className="container-wrapper">
-        <SwitchRouteComponent routes={HomeRoutes} />
+        <ApplicationsView />
       </div>
     </>
   );
